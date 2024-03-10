@@ -1,0 +1,66 @@
+.tasks li::before
+{
+    content: '\2807';
+}
+.tasks 
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+.tasks li 
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -10px;
+}
+
+.task 
+{
+    display: flex;
+}
+
+.task label
+{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.task input[type="checkbox"]
+{
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.task label::before
+{
+    content: '';
+    width: 1em;
+    height: 1em;
+    margin-right: .5em;
+    border: 1px grey solid;
+    border-radius: .2rem;
+}
+
+.task label:hover::before,
+.task input[type="checkbox"]:hover + label::before
+{
+    background-color: blueviolet;
+    transition: ease-in-out 0.4s;
+}
+
+.task > label.checked::before
+{
+    content: url('../../../images/done.svg');
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+label.checked
+{
+    color: grey;
+    text-decoration: line-through;
+}

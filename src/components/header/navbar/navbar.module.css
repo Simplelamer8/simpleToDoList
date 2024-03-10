@@ -1,0 +1,47 @@
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.navbar > .left
+{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: left;
+}
+
+.left > li 
+{
+    margin-left: 5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+}
+
+.navbar > button 
+{
+    background-image: url("https://s3-alpha-sig.figma.com/img/2013/0d80/400dce2e030b037099cfdabaa86aa7b9?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O4VIUz8G72W-AuWw7cmKMARI4y0aDYpbJIJjYw2HRg75rYR-jhwDucBR3ZNwwhQXk7j7pIa7eJw7eHGE40JXYnbNm9Da5KR8bGuagbGPRhinaJ8c31C6kHVT~0oJkliebP~MSs~2nTmRMXIG7SbKK0NF85VNoLXdApPCE0MrKTM1KHGWPsGzxJVr8-vTVSPJrN8Qw-k2x3UMPBgEJUEv1h0IQjmburgw6ylzO5YcQyAto4w4lEafBDPfOyagAa~dQZaKoU0bu1OBNDkIeaGDjF8eTBPURGeKaGJJXSyYHpnAlRrLjWxGA5ArUs4kCKzIoWI0VjP9EcbVcvOYhe6XQA__");
+    background-size: 60%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.addTask
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 10rem;
+    top: -4rem;
+}

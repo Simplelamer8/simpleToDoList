@@ -1,0 +1,72 @@
+main
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left 
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.right
+{
+    position: relative;
+}
+
+.right > button 
+{
+    background-image: url("../../images/plus.svg");
+    background-size: 60%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: #081E34;
+    color: white;
+}
+
+.addTask
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 10rem;
+    top: -4rem;
+    background-color: #E4E6E7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.addTask h5 
+{
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+.addTask button 
+{
+    color: white;
+    margin-top: 1rem;
+    border: none;
+    background-color: #081E34;
+    border-radius: 1rem;
+    width: 3rem;
+}
+
+.addTask input 
+{
+    height: 4rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.addTask input::placeholder
+{
+    margin-top: 0;
+}
