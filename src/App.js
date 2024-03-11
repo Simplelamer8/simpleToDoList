@@ -7,7 +7,10 @@ import { TabsContext, TasksContext } from './context';
 import { TaskOptionContext } from './context';
 
 function App() {
-
+  if (JSON.parse(localStorage.getItem("tasks")) === null)
+  {
+    localStorage.setItem("tasks", []);
+  }
   const tasks = JSON.parse(localStorage.getItem("tasks"));
   const [options, setOptionsState] = useState(new Array(tasks.length).fill(false));
 
