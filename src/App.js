@@ -7,16 +7,11 @@ import { TabsContext, TasksContext } from './context';
 import { TaskOptionContext } from './context';
 
 function App() {
-  let tasks = localStorage.getItem("tasks");
-  if (tasks === null || typeof tasks !== "undefined")
+  if (localStorage.getItem("tasks") === null || typeof localStorage.getItem("tasks") === "undefined")
   {
-    tasks = [{state: "todo", taskName:"This is your firs task :)"}];
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    localStorage.setItem("tasks", JSON.stringify([{state: "todo", taskName:"This is your firs task :)"}]));
   }
-  else
-  {
-    tasks = JSON.parse(tasks);
-  }
+  const tasks = JSON.parse(localStorage.getItem("tasks"));
   const [options, setOptionsState] = useState(new Array(tasks.length).fill(false));
 
   function updateTasks(newTasks)
